@@ -8,7 +8,7 @@
     from dbt.dbt_veena_cc.users
 
 
-----On average, how many orders do we receive per hour?
+---- Q2: On average, how many orders do we receive per hour?
 ----Ans=7.5 orders
     with avgorder as 
     (
