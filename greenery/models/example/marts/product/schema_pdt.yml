@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: pdt_event_details_fact
+    description: site activity data for product   
+    
+  - name: pdt_products_dim
+    description: product details table
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+ 
+ 
+ 

@@ -16,6 +16,12 @@ models:
       
   - name: orders
     description: information about orders 
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
   - name: addresses
     description: address information
   - name: events

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: core_order_detail_fact
+    description: order level transaction data 
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      
+  - name: core_products_dim
+    description: product details
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: core_user_dim
+    description: user information
+
+  - name: int_core_events_fact
+    description: information about events
+  - name: int_core_orders_fact
+    description: intermediate order level transaction data 
+ 

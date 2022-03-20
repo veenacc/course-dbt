@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: int_mktg_user_event_details
+    description: user events aggregate  data 
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      
+  - name: int_mktg_user_orders_details
+    description: user order aggregate  data 
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: mktg_customer_details_fact
+    description: user activity data
+
+  - name: mktg_user_dim
+    description: user profile data
+ 
+ 
