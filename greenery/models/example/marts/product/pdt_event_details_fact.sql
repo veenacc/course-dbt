@@ -25,7 +25,7 @@ SELECT
     zipcode,
     state,
     country,  
-    page_url,
+    page_url, 
     created_at,
     event_type,
     order_id,
