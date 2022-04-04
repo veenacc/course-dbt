@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  
+  - name: product_funnel_performance dashboard
+    type: dashboard
+    maturity: low
+    
+    description: >
+      understand how the product funnel is performing
+    
+    depends_on:
+      - ref('core_product_funnel_fact')
+    
+    owner:
+      name: veena
+      email: veena@greenery.com 
